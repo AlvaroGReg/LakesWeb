@@ -1,0 +1,181 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.08em;
+    scroll-behavior: smooth;
+
+}
+
+@font-face {
+    font-family: 'takelooks';
+    src: url('../res/fonts/TakeLooks.otf');
+}
+
+@font-face {
+    font-family: 'mandala';
+    src: url('../res/fonts/MandalaHandmade.otf');
+}
+
+p{
+    color: var(--font-color); 
+    font-family: 'mandalahandmade';
+    font-size: 0.8em;
+}
+
+h1,h2,h3{
+    font-family: 'takelooks';
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--background-color);
+}
+
+:root{
+    --background-color: #aafeff;
+
+    --font-color: #000000;
+
+    --primary-color: #008cff;
+    --accent-color: #007d8b;
+    --secondary-color: #009514;
+
+    --shade-soft: #ffffff88;
+
+    --marginMainItems: 10vh;
+}
+
+/*MAIN SCHEME*/
+
+.container{
+    width: 100%;
+    max-width: 4000px;
+}
+
+.container > .row > .col-6{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+.container > .row > .col{
+    margin-left: 0;
+}
+
+/*NAVIGATION*/
+
+.row > .col > .navbar{
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 20%;
+
+}
+.navbar-nav{
+    flex-direction: column !important;
+  
+}
+
+.navbar > .container-fluid{
+    flex-direction: column;
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+.navbar > .container-fluid > .container > .navbar-brand > .logoimg{
+ width: 100%;
+ max-width: 600px;
+} 
+  
+
+/*LAKES CONTENT*/
+
+.mainbody > h1{
+    position: absolute;
+    right: 0;
+    font-size: 3em;
+    top: 10%;
+    font-weight: 500;
+    background-color: var(--shade-soft);
+}
+
+.mainbody{
+    height: 100vh;
+    margin-bottom: 10vh;
+}
+
+.introsection > .lakesinfodiv{ 
+    display: flex;
+    padding: 5vh !important;
+    gap: 2rem;    
+}
+
+.introsection > .lakesinfodiv > div{ 
+    width: 50%;
+    text-align: justify;
+}
+
+.introsection > .lakesinfodiv > .imgdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introsection > .lakesinfodiv > .imgdiv > img{ 
+    width: 100%;
+}
+
+.background{
+    object-fit: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.lakesbody{
+    height: 101vh;
+}
+
+.lakesbody > .txtcontainer{
+    position: absolute;
+    margin-left: 1vw;
+    margin-top: 5vh;
+}
+
+.lakesbody > .txtcontainer > h2{
+    background-color: var(--shade-soft);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.lakesbody > .txtcontainer > .descriptioncontainer{
+    background-color: var(--shade-soft);
+    width: 40vw;
+    height: 0;
+    margin-left: 1vw;
+    text-align: justify;
+    overflow: hidden;
+    transition: 1s;
+    border-radius: 25px;
+}
+
+.lakesbody > .txtcontainer:hover .descriptioncontainer{
+    height: 225px;
+}
+
+.lakesbody > .txtcontainer > .descriptioncontainer > p{
+    margin: 10px;
+}
+
+.mainbody > .bi-arrow-down-circle{
+    position: fixed;
+    margin: auto;
+    font-size: 2em;
+    right: 42%;
+    bottom: 0;
+    z-index: 10;
+}
+
