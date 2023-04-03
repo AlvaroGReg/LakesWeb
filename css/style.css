@@ -115,7 +115,9 @@ body{
 
 .introsection > .lakesinfodiv > div{ 
     width: 50%;
-    text-align: justify;
+    text-align: left;
+    font-size: 1.6em;
+
 }
 
 .introsection > .lakesinfodiv > .imgdiv{
@@ -179,3 +181,85 @@ body{
     z-index: 10;
 }
 
+/*LAKES SECTIONS*/
+section >.lakeinfo >.comollegardiv{
+    position: relative;
+}
+
+section >.lakeinfo >.comollegardiv >iframe{
+    width: 100%;
+    height: 15vh;
+}
+
+/*TRAVELS*/
+
+.vuelos{
+    display: flex;
+    justify-content: center;
+}
+
+.vuelos > ul{
+    display: inline-flex;
+    gap: 5rem;
+    overflow: auto;
+}
+
+.vuelos > ul > a > li > div{
+    position: relative;
+}
+
+.vuelos > ul > a > li > div > img{
+    width: 15vw;
+    height: 15vw;
+}
+
+.vuelos > ul > a > li > div > p{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: var(--shade-soft);
+    text-align: center;
+    
+}
+
+/*HOTELS*/
+.hotelsdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.hotelsdiv > ul{
+    display: inline-flex;
+    gap: 5rem;
+    overflow: auto;
+}
+
+.hotelsdiv > ul > a > li > div{
+    position: relative;
+}
+
+.hotelsdiv > ul > a > li > div > img{
+    width: 15vw;
+    height: 15vw;
+}
+
+.hotelsdiv > ul > a > li > div > p{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: var(--shade-soft);
+    text-align: center;
+    
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.5em;
+}
