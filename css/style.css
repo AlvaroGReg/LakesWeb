@@ -213,9 +213,10 @@ section>.lakeinfo>.comollegardiv>iframe {
 
 .vuelos>ul {
     display: inline-flex;
+    justify-content: center;
     width: 100%;
     gap: 5rem;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .vuelos>ul>a>li>div {
