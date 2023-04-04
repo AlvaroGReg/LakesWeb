@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0 !important;
     padding: 0 !important;
     text-decoration: none;
@@ -18,22 +18,24 @@
     src: url('../res/fonts/MandalaHandmade.otf');
 }
 
-p{
-    color: var(--font-color); 
+p {
+    color: var(--font-color);
     font-family: 'mandalahandmade';
     font-size: 0.8em;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-family: 'takelooks';
 }
 
-body{
+body {
     overflow-x: hidden;
     background-color: var(--background-color);
 }
 
-:root{
+:root {
     --background-color: #aafeff;
 
     --font-color: #000000;
@@ -49,51 +51,52 @@ body{
 
 /*MAIN SCHEME*/
 
-.container{
+.container {
     width: 100%;
     max-width: 4000px;
 }
 
-.container > .row > .col-6{
+.container>.row>.col-6 {
     width: 80%;
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
 }
 
-.container > .row > .col{
+.container>.row>.col {
     margin-left: 0;
 }
 
 /*NAVIGATION*/
 
-.row > .col > .navbar{
+.row>.col>.navbar {
     position: fixed;
     z-index: 10;
     height: 100vh;
     width: 20%;
 
 }
-.navbar-nav{
+
+.navbar-nav {
     flex-direction: column !important;
-  
+
 }
 
-.navbar > .container-fluid{
+.navbar>.container-fluid {
     flex-direction: column;
     background-color: var(--background-color);
     height: 100%;
 }
 
-.navbar > .container-fluid > .container > .navbar-brand > .logoimg{
- width: 100%;
- max-width: 600px;
-} 
-  
+.navbar>.container-fluid>.container>.navbar-brand>.logoimg {
+    width: 100%;
+    max-width: 600px;
+}
+
 
 /*LAKES CONTENT*/
 
-.mainbody > h1{
+.mainbody>h1 {
     position: absolute;
     right: 0;
     font-size: 3em;
@@ -102,58 +105,63 @@ body{
     background-color: var(--shade-soft);
 }
 
-.mainbody{
+.mainbody {
     height: 100vh;
     margin-bottom: 10vh;
 }
 
-.introsection > .lakesinfodiv{ 
+.introsection>.lakesinfodiv {
     display: flex;
     padding: 5vh !important;
-    gap: 2rem;    
+    gap: 2rem;
 }
 
-.introsection > .lakesinfodiv > div{ 
+.introsection>.lakesinfodiv>div {
     width: 50%;
     text-align: left;
     font-size: 1.6em;
 
 }
 
-.introsection > .lakesinfodiv > .imgdiv{
+.introsection>.lakesinfodiv>.imgdiv {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.introsection > .lakesinfodiv > .imgdiv > img{ 
+
+.introsection>.lakesinfodiv>.imgdiv>img {
     width: 100%;
 }
 
-.background{
+.background {
     object-fit: cover;
     z-index: -1;
     height: 100%;
     width: 100%;
 }
 
-.lakesbody{
-    height: 101vh;
+.lakessection {
+    margin-top: 100px !important;
 }
 
-.lakesbody > .txtcontainer{
+.lakesbody {
+    height: 100vh;
+}
+
+.lakesbody>.txtcontainer {
     position: absolute;
     margin-left: 1vw;
     margin-top: 5vh;
 }
 
-.lakesbody > .txtcontainer > h2{
+.lakesbody>.txtcontainer>h2 {
     background-color: var(--shade-soft);
     width: fit-content;
     padding: 5px;
     border-radius: 10px;
 }
 
-.lakesbody > .txtcontainer > .descriptioncontainer{
+.lakesbody>.txtcontainer>.descriptioncontainer {
     background-color: var(--shade-soft);
     width: 40vw;
     height: 0;
@@ -164,15 +172,15 @@ body{
     border-radius: 25px;
 }
 
-.lakesbody > .txtcontainer:hover .descriptioncontainer{
+.lakesbody>.txtcontainer:hover .descriptioncontainer {
     height: 225px;
 }
 
-.lakesbody > .txtcontainer > .descriptioncontainer > p{
+.lakesbody>.txtcontainer>.descriptioncontainer>p {
     margin: 10px;
 }
 
-.mainbody > .bi-arrow-down-circle{
+.mainbody>.bi-arrow-down-circle {
     position: fixed;
     margin: auto;
     font-size: 2em;
@@ -182,38 +190,43 @@ body{
 }
 
 /*LAKES SECTIONS*/
-section >.lakeinfo >.comollegardiv{
+
+section>.lakeinfo>.comollegardiv {
     position: relative;
 }
 
-section >.lakeinfo >.comollegardiv >iframe{
+section>.lakeinfo>.comollegardiv>iframe {
     width: 100%;
     height: 15vh;
 }
 
 /*TRAVELS*/
 
-.vuelos{
+.vuelos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
 }
 
-.vuelos > ul{
+.vuelos>ul {
     display: inline-flex;
     gap: 5rem;
     overflow: auto;
 }
 
-.vuelos > ul > a > li > div{
+.vuelos>ul>a>li>div {
     position: relative;
 }
 
-.vuelos > ul > a > li > div > img{
-    width: 15vw;
-    height: 15vw;
+.vuelos>ul>a>li>div>img {
+    width: 120px;
+    height: 120px;
 }
 
-.vuelos > ul > a > li > div > p{
+.vuelos>ul>a>li>div>p {
     position: absolute;
     margin: auto;
     left: 0;
@@ -221,31 +234,31 @@ section >.lakeinfo >.comollegardiv >iframe{
     top: 0;
     background-color: var(--shade-soft);
     text-align: center;
-    
+    font-size: 0.3em;
 }
 
 /*HOTELS*/
-.hotelsdiv{
+.hotelsdiv {
     display: flex;
     justify-content: center;
 }
 
-.hotelsdiv > ul{
+.hotelsdiv>ul {
     display: inline-flex;
     gap: 5rem;
     overflow: auto;
 }
 
-.hotelsdiv > ul > a > li > div{
+.hotelsdiv>ul>a>li>div {
     position: relative;
 }
 
-.hotelsdiv > ul > a > li > div > img{
-    width: 15vw;
-    height: 15vw;
+.hotelsdiv>ul>a>li>div>img {
+    width: 120px;
+    height: 120px;
 }
 
-.hotelsdiv > ul > a > li > div > p{
+.hotelsdiv>ul>a>li>div>p {
     position: absolute;
     margin: auto;
     left: 0;
@@ -253,13 +266,22 @@ section >.lakeinfo >.comollegardiv >iframe{
     top: 0;
     background-color: var(--shade-soft);
     text-align: center;
-    
+    font-size: 0.3em;
 }
 
 /*FOOTER*/
 
-footer{
+footer {
     display: flex;
     justify-content: space-evenly;
     font-size: 0.5em;
+}
+footer > div > ul > li{
+    display: flex;
+    align-items: center;
+}
+
+footer > div > ul > li > img{
+    width: 30px;
+    height: 30px;
 }
