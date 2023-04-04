@@ -34,8 +34,6 @@ h4 {
 body {
     overflow-x: hidden;
     background-color: var(--background-color);
-    width: 100%;
-   align-self: flex-end;
 }
 
 :root {
@@ -67,7 +65,7 @@ body {
 }
 
 .container>.row>.col {
-    margin-left: 0;
+    width: 100% !important;
 }
 
 /*NAVIGATION*/
@@ -86,7 +84,7 @@ body {
 
 .navbar>.container-fluid {
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     background-color: var(--background-color);
     height: 100%;
 }
@@ -97,6 +95,9 @@ body {
     margin-bottom: 10ex !important;
 }
 
+.nav-item{
+    margin-top: 20px !important;
+}
 
 /*LAKES CONTENT*/
 
@@ -172,12 +173,11 @@ body {
     height: 0;
     text-align: justify;
     overflow: hidden;
-    transition: 1s;
     border-radius: 25px;
 }
 
 .lakesbody>.txtcontainer:hover .descriptioncontainer {
-    height: 175px;
+    height: fit-content
 }
 
 .lakesbody>.txtcontainer>.descriptioncontainer>p {
@@ -197,6 +197,10 @@ section>.lakeinfo>.comollegardiv>iframe {
 
 /*TRAVELS*/
 
+.vuelosdiv {
+    width: 100%;
+}
+
 .vuelos {
     display: flex;
     flex-direction: column;
@@ -204,12 +208,14 @@ section>.lakeinfo>.comollegardiv>iframe {
     align-items: center;
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
+    width: 100%;
 }
 
 .vuelos>ul {
     display: inline-flex;
+    width: 100%;
     gap: 5rem;
-    overflow: auto;
+    overflow-x: scroll;
 }
 
 .vuelos>ul>a>li>div {
@@ -291,16 +297,39 @@ footer>div>ul>a>li>img {
 /*RESPONSIVE*/
 
 @media only screen and (max-width: 990px) {
-
-    .container > .row > .col {
-        width: 10px;
+    * {
+        font-size: 1em;
     }
 
-    .container-fluid{
-        width: 100%;
+    p {
+        font-size: 0.6em;
     }
 
-    .navbar-toggler-icon{
-        top: 100px;
+    .vuelos>ul>a>li>div>p {
+        font-size: 0.3em;
+    }
+
+    .hotelsdiv>ul>a>li>div>p {
+        font-size: 0.3em;
+    }
+
+    .introsection>.lakesinfodiv>div {
+
+        font-size: 1.2em;
+
+    }
+
+    .mainbody>h1 {
+
+        font-size: 2em;
+
+    }
+
+    footer>div>h6 {
+        font-size: 1.2em;
+    }
+
+    footer {
+        font-size: 0.7em;
     }
 }
