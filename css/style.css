@@ -275,13 +275,14 @@ footer {
     display: flex;
     justify-content: space-evenly;
     font-size: 0.5em;
+    margin-top: 7ex !important;
 }
-footer > div > ul > li{
+footer > div > ul > a > li{
     display: flex;
     align-items: center;
 }
 
-footer > div > ul > li > img{
+footer > div > ul > a > li > img{
     width: 30px;
     height: 30px;
 }
