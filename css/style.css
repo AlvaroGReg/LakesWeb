@@ -9,30 +9,33 @@
 }
 
 @font-face {
-    font-family: 'takelooks';
-    src: url('../res/fonts/TakeLooks.otf');
+    font-family: 'batesin';
+    src: url('../res/fonts/bBatesin.ttf');
 }
 
 @font-face {
-    font-family: 'mandala';
-    src: url('../res/fonts/MandalaHandmade.otf');
+    font-family: 'champagne';
+    src: url('../res/fonts/Champagne\ &\ Limousines.ttf');
 }
 
 p {
     color: var(--font-color);
-    font-family: 'mandalahandmade';
+    font-family: 'champagne';
     font-size: 0.8em;
 }
 
 h1,
 h2,
-h3 {
-    font-family: 'takelooks';
+h3,
+h4 {
+    font-family: 'batesin';
 }
 
 body {
     overflow-x: hidden;
     background-color: var(--background-color);
+    width: 100%;
+   align-self: flex-end;
 }
 
 :root {
@@ -72,9 +75,8 @@ body {
 .row>.col>.navbar {
     position: fixed;
     z-index: 10;
-    height: 100vh;
+    height: 100%;
     width: 20%;
-
 }
 
 .navbar-nav {
@@ -84,6 +86,7 @@ body {
 
 .navbar>.container-fluid {
     flex-direction: column;
+    justify-content:flex-start;
     background-color: var(--background-color);
     height: 100%;
 }
@@ -91,6 +94,7 @@ body {
 .navbar>.container-fluid>.container>.navbar-brand>.logoimg {
     width: 100%;
     max-width: 600px;
+    margin-bottom: 10ex !important;
 }
 
 
@@ -99,9 +103,8 @@ body {
 .mainbody>h1 {
     position: absolute;
     right: 0;
-    font-size: 3em;
     top: 10%;
-    font-weight: 500;
+    font-size: 3em;
     background-color: var(--shade-soft);
 }
 
@@ -119,7 +122,7 @@ body {
 .introsection>.lakesinfodiv>div {
     width: 50%;
     text-align: left;
-    font-size: 1.6em;
+    font-size: 1.4em;
 
 }
 
@@ -159,13 +162,14 @@ body {
     width: fit-content;
     padding: 5px;
     border-radius: 10px;
+    margin-top: 10% !important;
+    margin-left: 5ex !important;
 }
 
 .lakesbody>.txtcontainer>.descriptioncontainer {
     background-color: var(--shade-soft);
     width: 40vw;
     height: 0;
-    margin-left: 1vw;
     text-align: justify;
     overflow: hidden;
     transition: 1s;
@@ -173,20 +177,11 @@ body {
 }
 
 .lakesbody>.txtcontainer:hover .descriptioncontainer {
-    height: 225px;
+    height: 175px;
 }
 
 .lakesbody>.txtcontainer>.descriptioncontainer>p {
-    margin: 10px;
-}
-
-.mainbody>.bi-arrow-down-circle {
-    position: fixed;
-    margin: auto;
-    font-size: 2em;
-    right: 42%;
-    bottom: 0;
-    z-index: 10;
+    margin: 5px !important;
 }
 
 /*LAKES SECTIONS*/
@@ -234,7 +229,7 @@ section>.lakeinfo>.comollegardiv>iframe {
     top: 0;
     background-color: var(--shade-soft);
     text-align: center;
-    font-size: 0.3em;
+    font-size: 0.4em;
 }
 
 /*HOTELS*/
@@ -266,7 +261,7 @@ section>.lakeinfo>.comollegardiv>iframe {
     top: 0;
     background-color: var(--shade-soft);
     text-align: center;
-    font-size: 0.3em;
+    font-size: 0.4em;
 }
 
 /*FOOTER*/
@@ -274,15 +269,38 @@ section>.lakeinfo>.comollegardiv>iframe {
 footer {
     display: flex;
     justify-content: space-evenly;
-    font-size: 0.5em;
+    font-size: 0.8em;
     margin-top: 7ex !important;
 }
-footer > div > ul > a > li{
+
+footer>div>h6 {
+    font-family: 'champagne';
+    font-size: 1.4em;
+}
+
+footer>div>ul>a>li {
     display: flex;
     align-items: center;
 }
 
-footer > div > ul > a > li > img{
+footer>div>ul>a>li>img {
     width: 30px;
     height: 30px;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 990px) {
+
+    .container > .row > .col {
+        width: 10px;
+    }
+
+    .container-fluid{
+        width: 100%;
+    }
+
+    .navbar-toggler-icon{
+        top: 100px;
+    }
 }
