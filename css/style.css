@@ -105,6 +105,8 @@ body {
     top: 10%;
     font-size: 3em;
     background-color: var(--shade-soft);
+    height: 0.9em;
+    border-radius: 10px 0 0 10px;
 }
 
 .mainbody {
@@ -122,7 +124,6 @@ body {
     width: 50%;
     text-align: left;
     font-size: 1.4em;
-
 }
 
 .introsection>.lakesinfodiv>.imgdiv {
@@ -152,17 +153,12 @@ body {
 
 .lakesbody>.txtcontainer {
     position: absolute;
-    margin-left: 1vw;
-    margin-top: 5vh;
 }
 
 .lakesbody>.txtcontainer>h2 {
     background-color: var(--shade-soft);
     width: fit-content;
-    padding: 5px;
     border-radius: 10px;
-    margin-top: 10% !important;
-    margin-left: 5ex !important;
 }
 
 .lakesbody>.txtcontainer>.descriptioncontainer {
@@ -289,7 +285,7 @@ section>.lakeinfo>.comollegardiv>iframe {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
     font-size: 0.8em;
     margin-top: 7ex !important;
 }
@@ -329,15 +325,11 @@ footer>div>ul>a>li>img {
     }
 
     .introsection>.lakesinfodiv>div {
-
         font-size: 1.2em;
-
     }
 
     .mainbody>h1 {
-
         font-size: 2em;
-
     }
 
     footer>div>h6 {
