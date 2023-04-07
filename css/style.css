@@ -4,8 +4,6 @@
     text-decoration: none;
     list-style-type: none;
     font-size: 1.08em;
-    scroll-behavior: smooth;
-
 }
 
 @font-face {
@@ -74,7 +72,7 @@ body {
     position: fixed;
     z-index: 10;
     height: 100%;
-    width: 20%;
+    width: 18%;
 }
 
 .navbar-nav {
@@ -219,6 +217,8 @@ section>.lakeinfo>.comollegardiv>iframe {
     overflow-x: auto;
 }
 
+
+
 .vuelos>ul>a>li>div {
     position: relative;
 }
@@ -235,8 +235,15 @@ section>.lakeinfo>.comollegardiv>iframe {
     right: 0;
     top: 0;
     background-color: var(--shade-soft);
+    font-weight: 500;
     text-align: center;
     font-size: 0.4em;
+    transition: 0.4s;
+}
+
+.vuelos>ul>a:hover div>p{
+    font-size: 0.5em;
+
 }
 
 /*HOTELS*/
@@ -269,6 +276,13 @@ section>.lakeinfo>.comollegardiv>iframe {
     background-color: var(--shade-soft);
     text-align: center;
     font-size: 0.4em;
+    transition: 0.4s;
+    font-weight: 400;
+}
+
+.hotelsdiv>ul>a:hover div>p{
+    font-size: 0.5em;
+
 }
 
 /*FOOTER*/
